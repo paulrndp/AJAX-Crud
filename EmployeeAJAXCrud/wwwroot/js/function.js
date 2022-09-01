@@ -16,7 +16,7 @@ function LoadData() {
                 html += '<td>' + item.id + '</td>';
                 html += '<td>' + item.fullname + '</td>';
                 html += '<td>' + item.position + '</td>';
-                html += '<td><a href="" onclick="return GetOne(' + item.id + ')" data-bs-toggle="modal" data-bs-target="#editModal">Edit</a> | <a href="" onclick="return Delete(' + item.id + ')" >Delete</a></td>';
+                html += '<td class="text-center "><a class="btn btn-warning text-white btn-sm" onclick="return GetOne(' + item.id + ')" data-bs-toggle="modal" data-bs-target="#editModal">Edit</a> <a class="btn btn-danger btn-sm" onclick="return Delete(' + item.id + ')" >Delete</a></td>';
                 html += '</tr>';
             });
             $('.tbody').html(html);
